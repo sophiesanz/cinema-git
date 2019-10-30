@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CINEMANZANA</title>
+    <title>CINEMATICKETS</title>
     <link rel="stylesheet" href="css/style-cinema.css">
     <link rel="stylesheet" href="css/megamenu.css">
     <link rel="stylesheet" href="css/arestilo.css">
     <link rel="stylesheet" href="css/cinema_registro.css">
 
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/favi.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="fonts_icons/icon_style.css">
 </head>
 <body>
-        <script src="js/arscript.js"></script>
-        <script src="js/cinema_registro.js"></script>
         <div class="nav-hamburguer">
                 <div class="drop-ham">
                 <button class="hambtn"><span class="icon-menu"></span></button>
                 <div class="hamburguer-content blue">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href="comida.html"   >
                                     <img src="img/img-1.jpg" alt=""  class="kimgMobile">
                                     <p  class="kpMobile">Confitería</p>
                             </a>
                            
                         </li>
                         <li>
-                            <a href="">
+                            <a href="resultados.html"    >
                             <img src="img/img-2.jpg" alt="" class="kimgMobile">
                             <p class="kpMobile">Promociones</p>
                             </a>
                         </li>
-                        <li>     <a href="">
+                        <li>     <a href="puntos.html"    >
                                 <img src="img/img-3.jpg" alt=""  class="kimgMobile">
                                 <p  class="kpMobile">Tarjeta CinemaTickets</p>
                                 </a>
                         </li>
                         <li>
-                                <a href="">
+                                <a href="tarjeta.html"    >
                                 <img src="img/img-4.jpg" alt=""  class="kimgMobile">
                                 <p  class="kpMobile">Reservas</p>
                                 </a>
@@ -54,7 +53,7 @@
         <section>
             <div class="brand">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="data">
                     <form action="" name="cinemas">
@@ -64,26 +63,26 @@
                             <option value="saab">Cali</option>
                             <option value="opel">Medellin</option>
                         </select>
-                        <select class="city" id="arteatro" onchange="arTeatroChange()">
+                        <select class="city" id="arteatro" onchange="arTeatroChange()" disabled="true">
                             <option value="volvo">Teatro</option>
                         </select>
-                        <select class="city" id="arpeli" onchange="arPeliChange()">
+                        <select class="city" id="arpeli" onchange="arPeliChange()" disabled="true" >
                             <option value="volvo">Pelicula</option>
                         </select>
-                        <select class="city" id="arhora">
+                        <select class="city" id="arhora" disabled="true">
                             <option value="volvo">Hora</option>
                         </select>
 
 
 
-                        <input type="button" value="Ver cartelera" class="blue anchoBtn">
+                        <input type="button" value="Ver Pelicula" class="blue anchoBtn ardisabled" onclick="arverpeli()" id="arbutton" disabled="true">
 
                     </form>
                 </div>
                 <div class="registro">
                     <form action="" name="register">
                             <span class="icon-user"></span>
-                        <input type="button" class="iniciar" value="Ingresar">
+                            <a href="registro.html" class="iniciar"> Ingresar</a>
                             
                     </form>
                 </div>
@@ -100,21 +99,21 @@
                             <h2>No te pierdas los productos que tenemos para ti</h2>
                           </div>   
                           <div class="menu-body">
-                            <a href="#">
+                            <a href="comida.html"    >
                                 <img src="img/img-1.jpg" alt="">
                                 <p>Confitería</p>
                             </a>
-                            <a href="#">
+                            <a href="resultados.html"    >
                               <img src="img/img-2.jpg" alt="">
-                              <p>Promociones</p>
+                              <p>Cartelera</p>
                             </a>
-                            <a href="#">
+                            <a href="puntos.html"    >
                               <img src="img/img-3.jpg" alt="">
                               <p>Tarjeta CinemaTickets</p>
                             </a>
-                            <a href="#">
+                            <a href="tarjeta.html"    >
                               <img src="img/img-4.jpg" alt="">
-                              <p>Reservas</p>
+                              <p>Servicios VIP</p>
                             </a>
                            
                           </div>
@@ -123,21 +122,21 @@
                         </div>
                       </div> 
                       <div class="kwelcome">
-                        <h1>Bienvenid@</h1>
+                            <h1 id="welcome">Bienvenid@</h1>
                       </div>
                       <div class="kredes">
-                        <ul>
-                            <li>
-                                    <span class="icon-youtube2"></span>
-                            </li>
-                            <li>
-                                    <span class="icon-instagram"></span>
-                            </li>
-                            <li>
-                                    <span class="icon-facebook"></span>
-                            </li>
-                        </ul>
-                      </div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/user/Google?hl=es"   ><span class="icon-youtube2"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/?hl=es-la"   ><span class="icon-instagram"></span></a>
+                                </li>
+                                <li>
+                                        <a href="https://es-la.facebook.com/"   ><span class="icon-facebook"></span></a>
+                                </li>
+                            </ul>
+                          </div>
                     </div>
           
         </section>
@@ -151,14 +150,14 @@
                 <small class="blueCinemaTickets">Régistrate y disfruta de todos nuestros beneficios</small>
                 <p> Si eres afiliado a CinemaTickets podrás:</p>
                     <ul>
-                    <li>- Tener accesos a tarifas especiales en boletería y confitería</li>
+                    <li>- Tener accesos a precios especiales en boletería y confitería</li>
                     <li>- Boleta y confitería gratis el día de tu cumpleaños</li>
                     <li>- Consultar tu saldo e historial de pagos</li>
                     </ul>
-                <button id="session" onclick="modal()">Iniciar Sesión</button>
+                <button id="session" onclick="openModal()">Iniciar Sesión</button>
                 <div id="modal" class="modal">
                     <div class="modalContent">
-                        <span id="close" class="close" onclick="close()">&times;</span>
+                        <span id="close" class="close" onclick="closeModal()">&times;</span>
                         <h2>Inicia Sesión</h2>
                             <form>
                                 <span>Nombre</span>
@@ -167,7 +166,7 @@
                                 <label for="Email"><input type="email" id="emailModal"></label>
                                 <span>Contraseña</span>
                                 <input type="password" id="passwordModal">
-                                <input type="button" id="sendModal" value="Enviar" onclick="user()">
+                                <input type="button" id="sendModal"  class="blue anchoBtn btn-registro"value="Enviar" onclick="user()">
                             </form>
                         
                     </div>
@@ -196,7 +195,7 @@
                                 </div>
                                 <span>Telefono</span>
                                 <input type="text" id="phone">
-                                <input type="button" id="register" value="Enviar" onclick="sendUser()">
+                                <input type="button" id="register"  class="blue anchoBtn btn-registro" value="Enviar" onclick="sendUser()">
                             </form>
                         </div>
                     </div>
@@ -223,6 +222,14 @@
         </section>
     </footer>
    
-   
+    <script src="js/arscript.js"></script>
+    <script src="js/cinema_registro.js"></script>
+    <script>
+            let welcome = document.getElementById("welcome");
+            if (sessionStorage.getItem('nameUser').length>0) {
+                welcome.innerHTML="Bienvenid@"  + " " + sessionStorage.getItem('nameUser');
+            };
+    
+        </script>
 </body>
 </html>

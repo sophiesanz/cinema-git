@@ -3,12 +3,12 @@ if (sessionStorage.getItem('nameUser').length>0) {
     welcome.innerHTML="Bienvenid@"  + " " + sessionStorage.getItem('nameUser');
 };
 
-function modal() {
+function openModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "block";
 };
 
-function close(){
+function closeModal(){
     var modal = document.getElementById("modal");
     modal.style.display = 'none';
 };
@@ -21,7 +21,7 @@ function close(){
 // };
 
 function sendUser() {
-    var pagina = "/taller2/cinema_index.html";
+    var pagina = "index.html";
     const name = document.getElementById("name").value;
     sessionStorage.setItem("nameUser",document.getElementById("name").value)
     const lastname = document.getElementById("lastname").value;
@@ -39,7 +39,7 @@ function sendUser() {
 };
 
 function user() {
-    var pagina = "/taller2/cinema_index.html";
+    var pagina = "index.html";
     const name = document.getElementById("nameModal").value;
     sessionStorage.setItem("nameUser",document.getElementById("nameModal").value)
     const email = document.getElementById("emailModal").value;
