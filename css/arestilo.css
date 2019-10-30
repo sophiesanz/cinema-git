@@ -14,6 +14,10 @@ iframe {
     height: 100%;
 }
 
+.ardisabled:disabled{
+    background: gray;
+}
+
 .artrailer1 {
     padding-top: 5%;
     height: 97%;
@@ -55,9 +59,14 @@ iframe {
 }
 
 .arboton {
-    background: white;
-    border: 1px solid rgb(16, 34, 197);
-    color: blue;
+        text-decoration: none;
+        background: linear-gradient(#0d61a6, #004d97);
+        border-top: 1px solid #2672af;
+        width: auto;
+        padding: 8px;
+        border-radius: 4px;
+        color: white;
+        text-align: center;
 }
 
 @media screen and (max-width: 900px) {

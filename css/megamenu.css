@@ -21,6 +21,10 @@ font-size: 2rem;
 border: none;
 }
 
+.youtube2:before {
+  content: "\ea9e";
+  color: white;
+}
 
 .drop-ham:hover .hamburguer-content{
    display: block;
@@ -214,6 +218,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081ba', end
           margin-right:7px;
         }
 
+        .kredes ul li a{
+          color:white;
+          text-decoration:none!important;
+         
+        }
+
+        .kredes ul li a:visited, a:hover{
+          color:white;
+         
+        }
         .icon-youtube2::before {
           content: "\ea9e";
           font-size:2rem;
